@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Running in the wind</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+    const sayDate = (str)=>{
+        console.log(str, Date.now());
+    }
+    let intervalId;
+     
+    document.querySelector('#start').addEventListener('click', () => {
+        intervalId = setInterval(sayDate, 1000, "Dancing in the Storm")
+    })
+    document.querySelector('#stop').addEventListener('click', () =>{
+        clearInterval(intervalId)
+    })
+
+</script>
+</html>
