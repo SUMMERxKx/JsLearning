@@ -19,7 +19,7 @@ const startChangingColor = () => {
 }
 
 const stopChangingColor = () => {
-    clearInterval(intervalID)
+    clearInterval(intervalID);
 
 }
 document.getElementById("start").addEventListener("click", startChangingColor,)
